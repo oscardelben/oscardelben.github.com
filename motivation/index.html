@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        var sources = [
+          'http://www.youtube.com/embed/lsSC2vx7zFQ',
+          'http://www.youtube.com/embed/XbZnCGyPneo',
+          'http://www.youtube.com/embed/MO_EMmxVY3k'
+          ];
+        $('#video').attr('src', sources[Math.floor(Math.random()*sources.length)]);
+      })
+    </script>
+  </head>
+  <body>
+    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+  </body>
+</html>
